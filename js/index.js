@@ -24,3 +24,18 @@ $("#bt3").click(function(){
 	$(".box").css({"background-color": "red"});
 });
 
+$(".box").click(function(){
+	$(this).css({"background-color": "yellow"});
+});
+
+$("#bt4").click(function(){
+	// $(".box").hide();
+	// $(".box").stop().fadeOut(2000);
+	$(".box").stop().slideUp(500);
+});
+$("#bt5").click(function(){
+	// $(".box").show();
+	// $(".box").stop().fadeIn(2000);
+	$(".box").stop().slideDown(500);
+});
+
