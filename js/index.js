@@ -39,3 +39,22 @@ $("#bt5").click(function(){
 	$(".box").stop().slideDown(500);
 });
 
+$("#bt6").click(function(){
+	$("#box4").stop().animate({"left": "90%"}, 500);
+});
+$("#bt7").click(function(){
+	$("#box4").stop().animate({"left": 0}, 500);
+});
+
+$("#box5").click(function(){
+	if(	$(this).css("background-color") == "rgb(127, 255, 212)"	) {
+		$(this).css({"background-color" : "rgb(36, 95, 143)"})
+	}
+	else {
+		$(this).css({"background-color" : "rgb(127, 255, 212)"})
+	}
+});
+
+$("#box6").click(function(){
+	$(this).toggleClass("darkBlue");
+});

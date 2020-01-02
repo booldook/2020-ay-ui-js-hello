@@ -1,5 +1,12 @@
-.box {width: 100px; height: 100px; border: 10px solid black;}
-#box4 {position: absolute; left: 0; top: 0;}
+.box, .box2 {width: 100px; height: 100px; border: 10px solid black;}
+#box4 {position: relative; left: 0; top: 0;}
+#box5 {background-color: rgb(127, 255, 212);}
+
+#box6 {background-color: aquamarine;}
+#box6.darkBlue {background-color: darkcyan;}
+
+
+/* rgb(127, 255, 212), rgb(36, 95, 143) */
 
 /* Responsive */
 @media screen and (max-width: 992px) {
