@@ -1,14 +1,4 @@
-/* Common */
-
-
-/* Header */
-
-
-/* Main */
-
-
-/* Footer */
-
+.box {width: 200px; height: 200px; border: 10px solid black;}
 
 /* Responsive */
 @media screen and (max-width: 992px) {
