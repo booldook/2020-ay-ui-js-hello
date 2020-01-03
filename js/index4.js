@@ -20,7 +20,7 @@ function boxMaker() {
 	var r = Math.floor(Math.random()*256);
 	var g = Math.floor(Math.random()*256);
 	var b = Math.floor(Math.random()*256);
-	$(".stage").append('<div style="background-color:rgb('+r+','+g+','+b+')"class="box" ></div>');
+	$(".stage").append('<div style="background-color:rgb('+r+','+g+','+b+')"class="box"></div>');
 }
 function boxRemover() {
 	$(".stage").empty();

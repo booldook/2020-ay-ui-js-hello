@@ -1,0 +1,11 @@
+.box {width: 100px; height: 100px; background-color: green;}
+.ani {animation-name: moving; animation-duration: 2s; animation-fill-mode: forwards;}
+.ani-reset {animation-name: moving2; animation-duration: 2s; animation-fill-mode: forwards;}
+@keyframes moving {
+	0% {transform: translateX(0)}
+	100% {transform: translateX(800%)}
+}
+@keyframes moving2 {
+	0% {transform: translateX(800%)}
+	100% {transform: translateX(0)}
+}
