@@ -31,3 +31,16 @@ var b;
 console.log(a);
 console.log(b);
 console.log(hap);
+
+console.clear();
+var x = 10;
+var y = 20;
+function hap2() {
+	return x + y;
+}
+
+function hap3(fn) {
+	alert(fn());
+}
+
+hap3(hap2);
