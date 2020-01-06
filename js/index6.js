@@ -35,11 +35,13 @@ function chgHide() {
 }
 
 function chgDown() {
-
+	$(".box").css("transition", "unset");
+	$(".box").stop().slideDown(1000);
 }
 
 function chgUp() {
-
+	$(".box").css("transition", "unset");
+	$(".box").stop().slideUp(1000);
 }
 
 function reset() {
