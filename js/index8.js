@@ -22,9 +22,23 @@ for(var i=1; i<=10; i++) {
 
 //------------------------------
 $("#btMake").click(function(){
-	for(var i=0; i<10000; i++) {
-		$(".wrapper").append('<div class="box">'+i+'</div>');
+	var html = '';
+	var style = '';
+	var r = 0;
+	var g = 0;
+	var b = 0;
+	for(var i=0; i<1000; i++) {
+		r = Math.floor(Math.random()*256);
+		g = Math.floor(Math.random()*256);
+		b = Math.floor(Math.random()*256);
+		style = 'rgb('+r+', '+g+', '+b+')';
+		html  = '<div class="box" style="background-color: '+style+'">';
+		html += '</div>';
+		$(".wrapper").append(html);
 	}
+	$(".box").mouseover(function(){
+		$(this).animate({"opacity": 0}, 2000);
+	});
 });
 $("#btReset").click(function(){
 	$(".wrapper").empty();
