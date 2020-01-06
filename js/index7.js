@@ -92,3 +92,44 @@ $("#btReset1").click(function(){
 	$("#in1").val("");
 	$("#in1").focus();
 });
+
+$("#sel2").change(function(){
+	var str = $(this).val();
+	if(str == "남자") {
+		alert("남자 입니다.");
+	}
+	else if(str == "여자") {
+		alert("여자 입니다.");
+	}
+	else {
+		alert("당신은 신고대상입니다.");
+	}
+});
+
+$("#btReset2").click(function(){
+	$("#sel2")[0].selectedIndex = 0;
+});
+
+$("#sel3").change(function(){
+	var str = $(this).val();
+	switch(str) {
+		case "남자":
+			alert("당신은 남자입니다.");
+			break;
+		case "여자":
+			alert("당신은 여자입니다.");
+			break;
+		default:
+			alert("당신은 외계인 입니다.");
+			break;
+	}
+});
+
+$("#btReset3").click(function(){
+	$("#sel3")[0].selectedIndex = 0;
+});
+
+var dom = document.querySelector("#sel2"); // 순수 JS모델
+var dom2 = $("#sel2"); // jQuery모델
+console.log(	dom.value	);
+console.log(	dom2.val()	);
