@@ -1,0 +1,2 @@
+.wrapper {display: flex; flex-wrap: wrap;}
+.box {width: 20px; height: 20px; margin: 1px; background-color: red; color: #fff; text-align: center;}

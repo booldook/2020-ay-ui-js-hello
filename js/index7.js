@@ -129,7 +129,13 @@ $("#btReset3").click(function(){
 	$("#sel3")[0].selectedIndex = 0;
 });
 
+/*
+1. 순수 JS모델을 jQuery로 바꾸기 => $(jsModel)
+2. jQuery모델을 순수JS모델로 바꾸기 => jQueryModel[0]
+*/
 var dom = document.querySelector("#sel2"); // 순수 JS모델
 var dom2 = $("#sel2"); // jQuery모델
 console.log(	dom.value	);
 console.log(	dom2.val()	);
+console.log(	$(dom).val()	);
+console.log(	dom2[0].value	);
