@@ -38,6 +38,16 @@ $("#btMake").click(function(){
 	html += '</tr>';
 	html += '</thead>';
 	$("#gugudanTb").append(html);
+	html  = '<tbody>';
+	for(i=1; i<=9; i++) {
+		html += '<tr>';
+		for(j=2; j<=9; j++) {
+			html += '<td>'+j+'x'+i+'='+(i*j)+'</td>';
+		}
+		html += '</tr>';
+	}
+	html += '</tbody>';
+	$("#gugudanTb").append(html);
 });
 $("#btReset").click(function(){
 	$("#gugudanTb").empty();
