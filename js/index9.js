@@ -65,3 +65,14 @@ $("#bt2").click(function(){
 $("#bt3").click(function(){
 	alert(	timeCheck() + " 입니다."	); // 11:04:27
 });
+
+/*
+i++ => i = i + 1;
+for(초기값; 조건문; 증가값) {
+
+}
+*/
+
+for(var i=0; i<10; i++) {
+	console.log(i);
+}
