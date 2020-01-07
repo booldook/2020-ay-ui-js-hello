@@ -57,7 +57,6 @@ function makeScore() {
 function resetScore() {
 	$("#scoreTb > tbody").empty();
 }
-
-
+//std.push({name:"홍길왕", kor: 75, eng: 85, math:95});
 
 
