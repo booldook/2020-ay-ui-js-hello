@@ -53,3 +53,20 @@ $("#btReset").click(function(){
 	$("#gugudanTb").empty();
 });
 
+$("#btMake2").click(function(){
+	$("#btReset2").trigger("click");
+	html  = '<tbody>';
+	for(i=2; i<=9; i++) {
+		html += '<tr>';
+		for(j=0; j<=9; j++) {
+			if(j == 0) html += '<td>'+i+'단</td>';
+			else html += '<td>'+i+' x '+j+' = '+(i*j)+'</td>';
+		}
+		html += '</tr>';
+	}
+	html += '</tbody>';
+	$("#gugudanTb2").append(html);
+});
+$("#btReset2").click(function(){
+	$("#gugudanTb2").empty();
+});
