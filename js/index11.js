@@ -57,6 +57,22 @@ function makeScore() {
 function resetScore() {
 	$("#scoreTb > tbody").empty();
 }
-//std.push({name:"홍길왕", kor: 75, eng: 85, math:95});
+// std.push({name:"홍길왕", kor: 75, eng: 85, math:95});
+// Number("95") => 95 
 
+$("#btSave").click(function(){
+	var temp = {
+		name: $("#name").val(),
+		kor: Number($("#kor").val()),	
+		eng: Number($("#eng").val()),	
+		math: Number($("#math").val()),	
+	}
+	std.push(temp);
+	// $("#btScore").trigger("click");
+	makeScore();
+	$("#name").val('');
+	$("#kor").val('');
+	$("#eng").val('');
+	$("#math").val('');
+});
 
