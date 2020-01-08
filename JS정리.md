@@ -26,3 +26,28 @@ var fn2 = function() {
 // 3. 함수의 이해
 // 함수는 함수명() <-- 가로를 열고 닫아야 실행된다.
 ~~~
+## 조건문과 반복문은 index12-정리 참조
+
+# jQuery 배워야 할 것
+## 접근자 - $("객체명")
+index(), eq(), find(), children(), sibling(), parent(), next(), prev()
+
+## 이벤트
+click, mouseover, mouseleave, scroll, resize, keypress, keyup
+
+## Animation
+1. animate({css}, 속도, easing, cb)
+2. fadeIn(), fadeOut(), hide(), show(), slideUp(), slideDown()
+
+## DOM
+1. 생성
+append(), appendTo(), prepend(), prependTo(), clone(), html(), text()
+2. 삭제
+empty(), remove()
+
+## css관련
+1. addClass(), removeClass(), toggleClass(), hasClass();
+2. css(), css({"color": "red"}), css("color", "red")
+
+## 속성관련
+1. attr("src"), attr("src", "./img/a.jpg"), data(), prop()
