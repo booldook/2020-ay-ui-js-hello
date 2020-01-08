@@ -1,0 +1,11 @@
+.circle {
+	width: 200px;
+	height: 200px;
+	border: 10px solid #333;
+	border-radius: 50%;
+	background-color: red;
+}
+
+.ab {
+	color: #fff;
+}

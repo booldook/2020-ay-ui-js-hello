@@ -41,5 +41,16 @@ var fn2 = function() {
 }
 fn2();
 
+// 3. 함수의 이해
+function fn3() {
+	console.log("FN3");
+}
+
+
+// 조건(제어)문
+$(".circle").addClass("a");
+$(".circle").removeClass("a");
+// $(대상객체).hasClass(클래스명) : 대상객체가 클래스를 가지고 있으면 true를 가지고 있지 않으면 false를 리턴한다.
+console.log($(".circle").hasClass("ab"));
 
 
